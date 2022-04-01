@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <script src="./tailwind.js"></script>
+</head>
+<body class="bg-gray-800 text-gray-300 pt-8 min-h-screen">
+    <h1 class="text-center font-semibold text-4xl mb-4">Productos</h1>
+    <p class="text-center text-lg text-gray-400 mb-12">Sitio web para la administración de productos.</p>
+    <div class="flex gap-8 pt-8 container mx-auto px-8">
+        <div class="flex-1">
+            <h2 class="text-2xl font-medium mb-6 text-[#519E8A]">Productos registrados</h2>
+            <ul class="ml-4 list-disc list-inside">
+                <li>Producto #1</li>
+                <li>Producto #2</li>
+                <li>Producto #3</li>
+                <li>Producto #4</li>
+                <li>Producto #5</li>
+            </ul>
+        </div>
+        <div class="flex-1">
+            <h2 class="text-2xl font-medium mb-6">Nuevo producto</h2>
+            <form action="/" method="POST" class="flex flex-col gap-4">
+                <input type="text" name="name" id="name" placeholder="Nombre" class="px-2 py-1 rounded bg-gray-700 border border-gray-600">
+                <input type="text" name="description" id="description" placeholder="Descripcion" class="px-2 py-1 rounded bg-gray-700 border border-gray-600">
+                <input type="number" name="price" id="price" placeholder="Valor" class="px-2 py-1 rounded bg-gray-700 border border-gray-600">
+                <input type="submit" value="Registrar" class="bg-[#519E8A] py-2 rounded font-semibold mt-8">
+            </form>
+        </div>
+    </div>
+    <div class="flex justify-center absolute w-full pb-8 left-0 bottom-0">© 2022 Sebastian Varona</div>
+</body>
+</html>
